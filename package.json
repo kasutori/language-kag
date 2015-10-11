@@ -1,0 +1,20 @@
+{
+  "name": "language-kag",
+  "author": "Kasutori Mitsufumi",
+  "version": "0.0.1",
+  "description": "Grammar to syntax-highlight KAG Script file for Atom editor",
+  "keywords": [
+    "kirikiri",
+    "tyrano",
+    "grammar",
+    "syntax",
+    "highlight",
+    "kag"
+  ],
+  "repository": "https://github.com/kasutori/language-kag",
+  "license": "MIT",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  }
+}

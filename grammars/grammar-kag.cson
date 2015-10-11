@@ -1,0 +1,71 @@
+'scopeName': 'source.ks'
+'fileTypes': [
+  'ks'
+]
+'name': 'KAG Script File'
+'patterns': [
+  {
+    'comment':'COMMENT'
+    'match': '(^;.*?$)'
+    'name': 'comment.line.semi-colon.ks'
+  }
+  {
+    'comment':'STRING'
+    'begin': '(")'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.ks'
+    'end': '(")'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.ks'
+    'name': 'string.quoted.double.ks'
+  }
+  {
+    'comment':'STRING'
+    'begin': '(\')'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.ks'
+    'end': '(\')'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.ks'
+    'name': 'string.quoted.single.ks'
+  }
+  {
+    'comment':'NUMBER'
+    'match': '(\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(i|L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b)'
+    'name': 'constant.numeric.ks'
+  }
+  {
+    'comment':'COMMAND'
+    'match': '(\\b(anim|autoload|autosave|backlay|bg|button|call|cancelskip|chara_config|chara_delete|chara_face|chara_hide|chara_mod|chara_new|chara_ptext|chara_show|clearfix|clearsysvar|clearvar|clickable|close|cm|commit|ct|current|cursor|deffont|delay|edit|else|elsif|emb|endhtml|endif|endignore|endkeyframe|endlink|endmacro|endnowait|endscript|er|erasemacro|eval|fadeinbgm|fadeinse|fadeoutbgm|fadeoutse|font|frame|freeimage|glink|glyph|graph|hidemenubutton|hidemessage|html|if|ignore|image|iscript|jump|kanim|keyframe|l|lr|label|layopt|link|loadjs|locate|macro|movie|nowait|p|playbgm|playse|position|preload|ptext|quake|r|resetfont|return|ruby|s|savesnap|screen_full|showload|showlog|showmenu|showmenubutton|showsave|skipstart|skipstop|stopanim|stopbgm|stopse|title|trace|trans|wa|wait|wb|wc|wt|xchgbgm)\\b)'
+    'name': 'entity.name.function.ks'
+  }
+  {
+    'comment':'VARIABLE'
+    'match': '((?<=)(\\b(alternate|back|backlog|base|black|blind|blue|bounce|center|clip|crossfade|dashed|def|dotted|double|drop|ease|ease-in|ease-in-out|ease-out|easeInBack|easeInBounce|easeInCirc|easeInCubic|easeInElastic|easeInExpo|easeInOutBack|easeInOutBounce|easeInOutCirc|easeInOutCubic|easeInOutElastic|easeInOutExpo|easeInOutQuad|easeInOutQuart|easeInOutQuint|easeInOutSine|easeInQuad|easeInQuart|easeInQuint|easeInSine|easeOutBack|easeOutBounce|easeOutCirc|easeOutCubic|easeOutElastic|easeOutExpo|easeOutQuad|easeOutQuart|easeOutQuint|easeOutSine|explode|false|fold|fore|forwards|gray|green|groove|infinite|jswing|left|left_center|linear|load|menu|none|normal|orange|pink|puff|red|right|right_center|rosy|save|scale|shake|size|skip|slide|solid|title|true|white|window)|0x[\dA-Fa-f]{6}|message\d*|\&[a-z_][\w\.]*)\\b)'
+    'name': 'keyword.control.ks'
+  }
+  {
+    'comment':'ENTITY'
+    'match': '(\\b(?<!=)(anim|ask|bold|borderstyle|clear|click|clickimg|clickse|color|cond|count|delay|direction|easing|effect|enterimg|enterse|exp|face|fix|folder|frame|graphic|height|hint|hmax|jname|keyframe|layer|leavese|left|line|longth|loop|marginb|marginl|marginr|margint|maxchars|memory|method|mode|mouseopacity|name|opacity|overwrite|p|page|perspective|pos|pos_mode|preexp|ptext|reflect|role|rotate|rotateX|rotateY|rotateZ|savesnap|scale|scaleX|scaleY|scaleZ|size|skew|skewX|skewY|skip|speed|storage|target|text|time|title|top|vertical|visible|vmax|wait|width|x|y|z)(?==)\\b)'
+    'name': 'keyword.control.ks'
+  }
+  {
+    'comment':'PREPROCESSOR'
+    'match': '(^\\*.*?$)'
+    'name': 'keyword.control.ks'
+  }
+  {
+    'comment':'TAG'
+    'match': '(^\\@|\\[(?!\\[)|\\])'
+    'name': 'entity.name.function.ks'
+  }
+  {
+    'comment':'CHAR_NAME'
+    'match': '(^#.*?$)'
+    'name': 'keyword.control.ks'
+  }
+]
