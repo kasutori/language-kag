@@ -1,7 +1,7 @@
 {
   "name": "language-kag",
   "author": "Kasutori Mitsufumi",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Grammar to syntax-highlight KAG Script file for Atom editor",
   "keywords": [
     "kirikiri",
