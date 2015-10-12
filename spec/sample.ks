@@ -13,7 +13,7 @@
 @layopt layer=message0 visible=false
 [backlay]
 
-[image storage=logo3.png  layer=1 page=back visible=true top=200 left=180 ]
+[image storage = logo3.png  layer=1 page=back visible=true top=200 left=180 ]
 [trans time=3000]
 [wt]
 [wait time=1000]
@@ -28,6 +28,11 @@
 ティラノスクリプトを試していただき、有難うございます。[l][r]
 このサンプルゲームをプレイするだけで、ティラノスクリプトの特徴を理解することができるようになっています。[l][r]
 ぜひ、最後までお付き合いください m(__)m[r]
+
+[iscript]
+alert('hello world!');
+[endscript]
+
 [l][cm]
 
 まず、大きな特徴としては
@@ -159,7 +164,7 @@
 2000近い書き込みがあり、現在も活発に交流が行われています[l][cm]
 
 そして、
-[font color-"red"]
+[font color="red"]
 「ティラノビルダー」
 [resetfont]
 という便利な開発ツールもあります。[l][r]
