@@ -5,11 +5,13 @@
   "description": "Grammar to syntax-highlight KAG Script file for Atom editor",
   "keywords": [
     "kirikiri",
+    "kag",
     "tyrano",
+    "language",
     "grammar",
     "syntax",
     "highlight",
-    "kag"
+    "吉里吉里"
   ],
   "repository": "https://github.com/kasutori/language-kag",
   "license": "MIT",
